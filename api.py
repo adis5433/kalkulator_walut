@@ -14,11 +14,9 @@ pprint(rates)
 
 
 codes_of_currencies = []
-x = 0
-for _ in rates:
+for x in range(len(rates)):
     code_of_currency = rates[x]['code']
     codes_of_currencies.append(code_of_currency)
-    x += 1
 print(codes_of_currencies)
 
 writer = csv.DictWriter (open('rates.csv', 'w', newline=''),delimiter=';', fieldnames=headers_of_columns)
