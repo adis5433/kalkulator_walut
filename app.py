@@ -53,9 +53,3 @@ def convert_curr():
 @app.route("/result")
 def show_result(cost):
     return render_template("kalkulator_walut_result.html")
-
-
-#musze wziać kod waluty z selecta currencies
-#odszukać jego wartość bid w rates
-#Przemnożyć z ilością podaną w amonunt_of_currency
-#zwrócić koszt transakcji
